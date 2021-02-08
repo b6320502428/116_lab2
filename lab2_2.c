@@ -8,5 +8,13 @@ int main()
     scanf("%c %f",&pro,&time);
     min=floor(time);
     sec=(time-min)*100;
+    if(pro=='A')
+    {
+        if(min<=200)
+        {
+            if(sec==0)
+                pride=199;
+        }
+    }
     return 0;
 }
