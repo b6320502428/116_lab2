@@ -11,8 +11,22 @@ int main()
             if(day%10==5)
                 printf("%c(^_^)/",b);
             else
-                printf("(^_^)",b);
+                printf("(^_^)");
         }
+        else
+        printf("{@_@}");
+    }
+    else if(name>=74 && name<=82)
+    {
+        if(day%2==1)
+        {
+            if(day%10==5)
+                printf("%c(*o*)/",b);
+            else
+                printf("(*o*)");
+        }
+        else
+        printf("{*v*}");
     }
     return 0;
 }
