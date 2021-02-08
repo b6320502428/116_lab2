@@ -22,6 +22,6 @@ int main()
         strcpy(g, "D");
     else
         strcpy(g, "F");
-
+    printf("%s",g);
     return 0;
 }
