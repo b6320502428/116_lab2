@@ -2,11 +2,15 @@
 #include <math.h>
 int main()
 {
-    float time,pride,sec;
+    float time,pride,sec,tmp;
     char pro;
-    int min;
+    int min,tmp2;
     scanf("%c %f",&pro,&time);
-    min=floor(time);
+    tmp=time*100;
+    min=(int)tmp;
+    tmp2=min%100;
+    min=min-tmp2;
+    min=min/100;
     sec=(time-min)*100;
     if(pro=='A'||pro=='a')
     {
