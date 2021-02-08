@@ -3,18 +3,21 @@
 int main()
 {
     char str[4];
-    int n[3],i,j,a;
+    int n[3],i,j,k,a;
     scanf("%d %d %d",&n[0],&n[1],&n[2]);
     scanf("%s",str);
-    for(i=0; i<3; i++)
+    for(j=1; j<3; j++)
     {
-        for(j=0; j<3-i; j++)
+        for(i=0; i<j; i++)
         {
-            if(n[j]>n[j+1])
+            if(n[j]<n[i])
             {
                 a=n[j];
-                n[j]=n[j+1];
-                n[j+1]=a;
+                for(k=j; k>i; k--)
+                {
+                    n[k]=n[k-1];
+                }
+                n[k]=a;
             }
         }
     }
