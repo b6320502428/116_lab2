@@ -28,5 +28,17 @@ int main()
         else
         printf("{*v*}");
     }
+    else if(name>=83 && name<=90)
+    {
+        if(day%2==1)
+        {
+            if(day%10==5)
+                printf("%c(T_T)/",b);
+            else
+                printf("(T_T)");
+        }
+        else
+        printf("{x_x}");
+    }
     return 0;
 }
