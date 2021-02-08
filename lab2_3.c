@@ -4,9 +4,9 @@ int main()
 {
     char str[4];
     int n[3],i,j,a;
-    gets(str);
+    scanf("%s",&str);
     scanf("%d %d %d",&n[0],&n[1],&n[2]);
-    for(i=0; i<n; i++)
+    for(i=0; i<3; i++)
     {
         for(j=0; j<3-i; j++)
         {
@@ -30,5 +30,7 @@ int main()
         printf("%d %d %d",n[2],n[0],n[1]);
     else if(!(strcmp(str,"CBA")))
         printf("%d %d %d",n[2],n[1],n[0]);
+    else
+        printf("Error");
     return 0;
 }
