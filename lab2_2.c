@@ -22,7 +22,7 @@ int main()
         else
             pride=199;
     }
-    if(pro=='B')
+    else if(pro=='B')
     {
         if(min==400)
         {
@@ -36,5 +36,6 @@ int main()
         else
             pride=299;
     }
+    printf("%.2f",pride);
     return 0;
 }
