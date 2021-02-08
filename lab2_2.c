@@ -22,5 +22,19 @@ int main()
         else
             pride=199;
     }
+    if(pro=='B')
+    {
+        if(min==400)
+        {
+            if(sec==0)
+                pride=299;
+            else
+                pride=299+(sec*2/60);
+        }
+        else if(min>400)
+            pride=299+(min-400)*2+(sec*2/60);
+        else
+            pride=299;
+    }
     return 0;
 }
