@@ -20,9 +20,15 @@ int main()
     }
     if(!(strcmp(str,"ABC")))
         printf("%d %d %d",n[0],n[1],n[2]);
-    if(!(strcmp(str,"ACB")))
+    else if(!(strcmp(str,"ACB")))
         printf("%d %d %d",n[0],n[2],n[1]);
-    if(!(strcmp(str,"BAC")))
+    else if(!(strcmp(str,"BAC")))
         printf("%d %d %d",n[1],n[0],n[2]);
+    else if(!(strcmp(str,"BCA")))
+        printf("%d %d %d",n[1],n[2],n[0]);
+    else if(!(strcmp(str,"CAB")))
+        printf("%d %d %d",n[2],n[0],n[1]);
+    else if(!(strcmp(str,"CBA")))
+        printf("%d %d %d",n[2],n[1],n[0]);
     return 0;
 }
