@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <math.h>
 int main()
 {
     float time,pride,sec;
@@ -8,7 +8,7 @@ int main()
     scanf("%c %f",&pro,&time);
     min=floor(time);
     sec=(time-min)*100;
-    if(pro=='A')
+    if(pro=='A'||pro=='a')
     {
         if(min==200)
         {
@@ -22,7 +22,7 @@ int main()
         else
             pride=199;
     }
-    else if(pro=='B')
+    else if(pro=='B'||pro=='b')
     {
         if(min==400)
         {
@@ -36,6 +36,8 @@ int main()
         else
             pride=299;
     }
+    else
+        pride=0;
     printf("%.2f",pride);
     return 0;
 }
